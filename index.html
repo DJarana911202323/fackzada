@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,22 +8,40 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul id="menu-disciplinas">
-                <li><a href="#disciplina1">Disciplina 1</a></li>
-                <li><a href="#disciplina2">Disciplina 2</a></li>
-                <li><a href="#disciplina3">Disciplina 3</a></li>
+        <nav class="menu-principal">
+            <ul>
+                <li><a href="#disciplinas">Disciplinas</a></li>
+                <li><a href="#conteudos">Conteúdos</a></li>
             </ul>
-            <ul id="menu-conteudos">
+        </nav>
+    </header>
+
+    <section id="disciplinas">
+        <h1>Disciplinas</h1>
+        <nav class="menu-disciplinas">
+            <ul>
+                <li><a href="#matemática">Disciplina 1</a></li>
+                <li><a href="#geografia">Disciplina 2</a></li>
+                <li><a href="#historia">Disciplina 3</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section id="conteudos">
+        <h1>Conteúdos Principais</h1>
+        <nav class="menu-conteudos">
+            <ul>
                 <li><a href="#conteudo1">Conteúdo 1</a></li>
                 <li><a href="#conteudo2">Conteúdo 2</a></li>
                 <li><a href="#conteudo3">Conteúdo 3</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
-        <!-- Conteúdo principal do portfólio -->
-    </main>
-    <script src="scripts.js"></script>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Portfólio de Disciplinas</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
