@@ -1,83 +1,63 @@
-/* Resetando o estilo básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: "Fira Sans Condensed", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      color: var(--cor-de-texto);
 }
 
-/* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
+:root{
+    --cor-de-fundo: #211C84;
+    --cor-de-texto: #4D55CC;
+    --cor-do-cabeçalho: #7A73D1;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Menu das disciplinas */
-.menu-disciplinas {
-    margin-top: 20px;
-    background-color: #eee;
-    padding: 1rem;
-    border-radius: 5px;
-}
-
-.menu-disciplinas ul {
+header{
     display: flex;
-    justify-content: space-around;
-}
-
-.menu-disciplinas ul li {
-    list-style-type: none;
-}
-
-/* Menu de conteúdos */
-.menu-conteudos {
-    margin-top: 20px;
-    background-color: #1041e2;
+    width: 100%;
+    background-color: var(#7A73D1);
     padding: 1rem;
-    border-radius: 5px;
+    position: relative;
+    justify-content: center;
+ }
+
+ .menu-disciplina{
+width: 20%;
+display: inline-block;
+ }
+
+    .titulo{
+        font-size: 200%;
+        color:#000000;
+    }
+
+    .botao-disciplina{
+        cursor: pointer;
+        font-size: 2rem;
+        background: none;
+background-color: var(#000000);
+border: none;
+padding: 1.05rem 1.5em;
+        color:#DAC0AD;
+
+    }
+.lista-vertical{
+display: none;
+position: absolute;
+background-color: aliceblue;
+box-shadow: #4D55CC;
+min-width: 190px;
+z-index: 1;
+left: 1rem;
+top: 100%;
+}
+.lista-vertical a:hover{
+    background-color: aliceblue;
 }
 
-.menu-conteudos ul {
-    display: flex;
-    justify-content: space-around;
+#menu-toggle:checked ~ .lista-vertical{
+    display:block;
 }
-
-.menu-conteudos ul li {
-    list-style-type: none;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-    margin-top: 40px;
+#menu-toggle:checked + .botao-disciplina{
+    background-color: #000000;
 }
